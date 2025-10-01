@@ -1,54 +1,99 @@
+/* Base style */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  font-family: "Georgia", serif;
+  line-height: 1.7;
+  background: #fdfdfd;
+  color: #2e2e2e;
 }
 
+/* Header + Badge */
 header {
-  background: #4a90e2;
-  padding: 1rem;
+  background: linear-gradient(120deg, #335c81, #4a90e2);
+  padding: 1.5rem;
   color: white;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
+.badge {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation */
 nav {
   display: flex;
   justify-content: center;
-  background: #357ab8;
+  background: #2c3e50;
 }
 
 nav a {
   color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
   text-decoration: none;
-  display: block;
+  font-weight: 500;
   transition: background 0.3s;
 }
 
 nav a:hover {
-  background: #285a87;
+  background: #1a252f;
 }
 
+/* Content area */
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
+.container h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Profile photo */
+.profile-photo {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+
+/* Gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #4a90e2;
+  background: #335c81;
   color: white;
   margin-top: 2rem;
 }
 
+/* Responsive nav */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
-    align-items: center;
   }
   nav a {
     width: 100%;
