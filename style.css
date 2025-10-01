@@ -64,11 +64,11 @@ footer {
 }
 
 footer a {
-  color: #3399ff; /* lighter blue */
+  color: #1a73e8; /* medium blue (Google-style link) */
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
-  color: #66b3ff; /* even lighter on hover */
+  color: #0b57d0; /* slightly darker on hover */
 }
