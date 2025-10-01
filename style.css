@@ -56,19 +56,22 @@ main {
 
 footer {
   margin-top: 2rem;
-  padding: 1rem;
-  background-color: #f8f8f8;
+  padding: 1.5rem;
+  background-color: #e9ecef;   /* slightly darker gray for stronger contrast */
   text-align: center;
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 0.95rem;
+  color: #333;                 /* darker text for better readability */
+  border-top: 1px solid #ccc;  /* subtle separator line */
 }
 
 footer a {
-  color: #1a73e8; /* medium blue (Google-style link) */
+  color: #1a73e8; /* medium blue */
   text-decoration: none;
+  font-weight: 500; /* makes the link stand out a bit */
 }
 
 footer a:hover {
   text-decoration: underline;
-  color: #0b57d0; /* slightly darker on hover */
+  color: #0b57d0; /* darker hover */
+  transition: color 0.2s ease; /* smooth hover transition */
 }
